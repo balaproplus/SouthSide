@@ -47,6 +47,16 @@ body{
 .ms-banner-area .Landing-section-logo img{
   width: 1200px;
 }
+@media screen and (max-width: 996px) {
+  .ms-banner-area .Landing-section-logo img{
+    width: 400px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .ms-banner-area .Landing-section-logo img{
+    width: 400px;
+  }
+}
 .offcanvas__info .ms-offcanvas-widget .offcanvas-links li{
   list-style: none;
   margin-bottom: 10px;
@@ -121,6 +131,7 @@ body{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .ms-banner-area .banner-img{
+  overflow-x: hidden;
   display: flex;
   justify-content: center;
   align-items: center;

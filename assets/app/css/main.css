@@ -149,6 +149,7 @@
     Typography css start 
 ---------------------------------*/
 body {
+  overflow-x: hidden;
   font-family: var(--bd-ff-body);
   font-size: var(--bd-fs-body);
   font-weight: normal;

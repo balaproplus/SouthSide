@@ -1,64 +1,37 @@
+gsap.registerPlugin(ScrollTrigger);
 
+gsap.from(".welcome-para", {
+  opacity: 0,       // start invisible
+  y: 30,            // slide up a bit
+  duration: 1.2,    // smooth timing
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".welcome-para",
+    start: "top 80%",      // when top of p is 80% into viewport
+    toggleActions: "play none none none",
+  }
+});
+
+// typewriter animation
 gsap.registerPlugin(TextPlugin, ScrollTrigger);
 
-const fullText = `From the streets of Tamil Nadu to the heart of India from every artist's own mind and efficiency, South Side Hip Hop Records is the home for raw, independent rap talent that refuses to be silenced. Welcome to South Side Hip Hop Records India Born in the heart of Chennai, Tamil Nadu — South Side Hip Hop Records India is a home for hip-hop artists, rappers, and storytellers across India. It's <span>The Foundation of Real Sound</span>, South Side Hip Hop Records India was born out of need, a need for a space where real artists can breathe, create, and be heard. No gimmicks. No mumble. No fake flex. Just <span>authentic music</span> that represents struggle, pride, roots, rebellion, and the fight to rise. Whether you're a kid writing bars in your notebook, a survivor pouring your pain onto a beat, or an underground MC ready to take over stages, South Side Hip Hop Records India is<span> your home.</span>`;
+gsap.utils.toArray(".welcome-highlights li").forEach((li, i) => {
+  let fullText = li.innerHTML;   // store the text
+  li.innerHTML = "";             // clear it before animating
 
-const typingElement = document.getElementById('typingText');
-let cursor;
-let hasAnimated = false;
-
-function createCursor() {
-    cursor = document.createElement('span');
-    cursor.className = 'cursor';
-    typingElement.appendChild(cursor);
-}
-
-function animateText() {
-    if (hasAnimated) return;
-    hasAnimated = true;
-
-    typingElement.innerHTML = '';
-    createCursor();
-
-    const tl = gsap.timeline();
-
-    tl.to(typingElement, {
-        duration: 10,
-        text: {
-            value: fullText,
-            delimiter: ''
-        },
-        ease: 'none',
-        onUpdate: function() {
-            if (cursor && cursor.parentNode === typingElement) {
-                typingElement.removeChild(cursor);
-            }
-            createCursor();
-        },
-        onComplete: function() {
-            gsap.delayedCall(1, function() {
-                if (cursor && cursor.parentNode === typingElement) {
-                    gsap.to(cursor, {
-                        duration: 0.3,
-                        opacity: 0,
-                        onComplete: function() {
-                            if (cursor && cursor.parentNode === typingElement) {
-                                typingElement.removeChild(cursor);
-                            }
-                        }
-                    });
-                }
-            });
-        }
-    });
-}
-
-ScrollTrigger.create({
-    trigger: '.container',
-    start: 'top 80%',
-    once: true,
-    onEnter: animateText
+  gsap.to(li, {
+    text: { value: fullText },
+    duration: 0.5,       // speed of typing
+    ease: "none",
+    delay: i * 0.5,      // stagger typing each line
+    scrollTrigger: {
+      trigger: ".welcome-highlights",
+      start: "top 80%",
+      toggleActions: "play none none none",
+    }
+  });
 });
+
 
 // 3 boxes animation
 gsap.from(".movements-content-layout:first-child .movements-content-item:first-child", {
@@ -283,4 +256,47 @@ gsap.to('.quote-2 .highlight-line', {
             delay: 0.2
         });
     }
+});
+
+//foundation test animation
+
+gsap.from("#footer-typewriter", {
+  opacity: 0,
+  y: 50, // optional, makes it slide up a bit
+  duration: 1.5,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: "#footer-typewriter",
+    start: "top 80%", // when the top of element hits 80% of viewport
+    toggleActions: "play none none none" // only play once
+  }
+});
+
+//accordin fade animation
+gsap.from(".ms-faq-group", {
+  opacity: 0,
+  y: 50, // start slightly below
+  duration: 1,
+  ease: "power2.out",
+  stagger: 0.3, // each group animates 0.3s after the previous
+  scrollTrigger: {
+    trigger: ".ms-faq-group", // triggers when the first group comes into view
+    start: "top 70%", // tweak as needed
+    toggleActions: "play none none none"
+  }
+});
+
+
+//form fade animation
+
+gsap.from(".ms-contact-wrap", {
+  opacity: 0,
+  y: 50, // start slightly below
+  duration: 0.7,
+  ease: "power2.out",
+  scrollTrigger: {
+    trigger: ".ms-contact-wrap", // triggers when this form comes into view
+    start: "top 55%",
+    toggleActions: "play none none none",
+  }
 });

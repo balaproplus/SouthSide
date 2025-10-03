@@ -234,89 +234,89 @@
 
 /*  */
 
-        .ms-blockquote {
-            position: relative;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 2px solid rgba(255, 215, 0, 0.2);
-            backdrop-filter: blur(10px);
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
+.ms-blockquote {
+    position: relative;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 2px solid rgba(255, 215, 0, 0.2);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
 
-        .ms-blockquote:hover {
-            border-color: rgba(255, 215, 0, 0.5);
-            box-shadow: 0 10px 40px rgba(255, 215, 0, 0.2);
-            transform: translateY(-5px);
-        }
+.ms-blockquote:hover {
+    border-color: rgba(255, 215, 0, 0.5);
+    box-shadow: 0 10px 40px rgba(255, 215, 0, 0.2);
+    transform: translateY(-5px);
+}
 
-        .ms-blockquote blockquote{
-          border: none;
-        }
+.ms-blockquote blockquote{
+  border: none;
+}
 
-        .ms-blockquote::before {
-            content: '"';
-            position: absolute;
-            top: -20px;
-            left: 20px;
-            font-size: 150px;
-            color: rgba(255, 215, 0, 0.1);
-            font-family: Georgia, serif;
-            line-height: 1;
-        }
+.ms-blockquote::before {
+    content: '"';
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 150px;
+    color: rgba(255, 215, 0, 0.1);
+    font-family: Georgia, serif;
+    line-height: 1;
+}
 
-        .qoute-body {
-            position: relative;
-            z-index: 2;
-            margin-bottom: 20px;
-        }
+.qoute-body {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+}
 
-        .qoute-body h4 {
-            font-size: clamp(1.1rem, 2vw, 1.4rem);
-            line-height: 1.6;
-            color: #e0e0e0;
-            font-weight: 400;
-            font-style: italic;
-        }
+.qoute-body h4 {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    line-height: 1.6;
+    color: #e0e0e0;
+    font-weight: 400;
+    font-style: italic;
+}
 
-        blockquote span {
-            display: block;
-            text-align: right;
-            font-size: 1rem;
-            color: #ffd700;
-            font-weight: bold;
-            letter-spacing: 2px;
-            margin-top: 15px;
-            position: relative;
-            z-index: 2;
-        }
+blockquote span {
+    display: block;
+    text-align: right;
+    font-size: 1rem;
+    color: #ffd700;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 2;
+}
 
-        .vinyl-bg {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 30%, transparent 31%);
-            opacity: 0.3;
-            pointer-events: none;
-        }
+.vinyl-bg {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 30%, transparent 31%);
+    opacity: 0.3;
+    pointer-events: none;
+}
 
-        .vinyl-1 {
-            top: -50px;
-            right: -50px;
-        }
+.vinyl-1 {
+    top: -50px;
+    right: -50px;
+}
 
-        .vinyl-2 {
-            bottom: -50px;
-            left: -50px;
-        }
+.vinyl-2 {
+    bottom: -50px;
+    left: -50px;
+}
 
-        .highlight-line {
-            position: absolute;
-            height: 3px;
-            background: linear-gradient(90deg, transparent, #ffd700, transparent);
-            top: 0;
-            left: 0;
-            width: 100%;
-            opacity: 0;
-        }
+.highlight-line {
+    position: absolute;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #ffd700, transparent);
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+}

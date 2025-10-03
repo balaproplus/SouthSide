@@ -27,12 +27,24 @@
     <link rel="stylesheet" href="assets/app/css/main.css" />
     <link rel="stylesheet" href="assets/app/css/main2.css" />
     <link rel="stylesheet" href="assets/app/css/main3.css" />
-    <link rel="stylesheet" href="assets/app/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/app/css/style.css" />
+    <!-- <link rel="stylesheet" href="assets/app/css/style.css" /> -->
+    <link rel="stylesheet" href="assets/app/css/animations.css" />
     <!-- Javascript -->
-     <script src="https://unpkg.com/scrollreveal"></script>
-  </head>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
 
   <body>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+    </style>
     <div class="mouseCursor cursor-outer"></div>
     <div class="mouseCursor cursor-inner"><span>Drag</span></div>
 
@@ -281,24 +293,42 @@
                                 <div class="col-xl-11">
                                     <div class="ms-banner__main-wrapper">
                                         <div class="ms-banner__content text-center">
-                                            <h1 class="ms-banner__bg-title">
+                                           
+                                            <div class="content">
+                                                <h1 class="title">South Side Hip Hop Records
+                                                    <div class="aurora">
+                                                    <div class="aurora__item"></div>
+                                                    <div class="aurora__item"></div>
+                                                    <div class="aurora__item"></div>
+                                                    <div class="aurora__item"></div>
+                                                    </div>
+                                                </h1>
+                                            </div>
+
+                                            <!-- <h1 class="ms-banner__bg-title">
                                                 South Side Hip Hop Records
-                                            </h1>
+                                            </h1> -->
                                             <h2 class="ms-banner__title msg_title bd-title-anim">India</h2>
                                             <h3 class="ms-banner__sub-title msg_title bd-title-anim pb-120 pt-60">Where Authentic Hip-Hop comes to life.
                                             </h3>
                                             
-                                            <div class="welcome-quote pb-120">
+                                            <!-- <div class="welcome-quote pb-120">
                                                 <blockquote class="wp-block-quote">
                                                             <p>Ink. Sync. Live Life As You Got No Time To Blink.</p>
                                                             <cite> - AYUSH EMPURAAN</cite>
                                                 </blockquote>
+                                            </div> -->
+
+                                            <div class="container">
+                                                <p class="welcome-para" id="typingText"></p>
                                             </div>
-                                        <p class="welcome-para">From the streets of Tamil Nadu to the heart of India from every artist’s own mind and efficiency, South Side Hip Hop Records is the home for raw, 
-                                            independent rap talent that refuses to be silenced.Welcome to South Side Hip Hop Records India Born in the heart of Chennai, Tamil Nadu — South Side Hip Hop Records India is a home for hip-hop artists, 
-                                            rappers, and storytellers across India. It’s <span>The Foundation of Real Sound</span>, South Side Hip Hop Records India was born out of need, a need for a space where real artists can breathe, create, and be heard. 
-                                            No gimmicks. No mumble. No fake flex. Just <span>authentic music</span> that represents struggle, pride, roots, rebellion, and the fight to rise. Whether you’re a kid writing bars in your notebook, a survivor pouring your pain onto a beat, 
-                                            or an underground MC ready to take over stages , South Side Hip Hop Records India is<span> your home.</span></p>
+                                            
+                                            <!-- <p class="welcome-para">From the streets of Tamil Nadu to the heart of India from every artist’s own mind and efficiency, South Side Hip Hop Records is the home for raw, 
+                                                independent rap talent that refuses to be silenced.Welcome to South Side Hip Hop Records India Born in the heart of Chennai, Tamil Nadu — South Side Hip Hop Records India is a home for hip-hop artists, 
+                                                rappers, and storytellers across India. It’s <span>The Foundation of Real Sound</span>, South Side Hip Hop Records India was born out of need, a need for a space where real artists can breathe, create, and be heard. 
+                                                No gimmicks. No mumble. No fake flex. Just <span>authentic music</span> that represents struggle, pride, roots, rebellion, and the fight to rise. Whether you’re a kid writing bars in your notebook, a survivor pouring your pain onto a beat, 
+                                                or an underground MC ready to take over stages , South Side Hip Hop Records India is<span> your home.</span>
+                                            </p> -->
                                         </div>
                                         <div class="row mt-80 bdFadeUp welcome-highlights">
                                             <ul>
@@ -329,7 +359,7 @@
             <div class="position-relative welcome-home-section pb-50 mt-80 mb-80">	
                 <div class="data-text">	
                     <svg class="animation-text">
-                        <text x="0" y="1em">Welcome Home</text>
+                        <text x="50%" y="1em" text-anchor="middle" >Welcome Home</text>
                     </svg>
                 </div>
                 <div class="banner-media"> 
@@ -342,9 +372,9 @@
             <!-- Our Movement start -->
             <section class="trending__area p-relative z-index-11 x-clip pt-100 pb-160">
                 <div class="container pb-140">
-                    <div class="row align-items-center mb-15 bdFadeUp d-flex justify-content-center">
+                    <div class="row align-items-center mb-15 d-flex justify-content-center">
                             <div class="col-xl-7 col-lg-10 d-flex justify-content-center">
-                                <div class="section__title-wrapper mb-40 bd-title-anim">
+                                <div class="section__title-wrapper mb-40">
                                 <div id="msg-title">
                                     <h2 class="section__title"><span class="animated-underline active">Our Movement</h2>
                                 </div>
@@ -483,9 +513,10 @@
             <section class="ms-contact-area pb-120 pt-30">
                         <div class="container contact-form">
                             <div class="col-xl-8 col-lg-10">
-                                <div class="section__title-wrapper mb-40 bd-title-anim">
+                                <div class="section__title-wrapper mb-40">
                                     <div id="msg-title">
-                                        <h2 class="section__title">Want To Be a<span class="contact-title-highlight"> South Sider?</span> Join the Movement! </h2>                            </div>
+                                        <h2 class="section__title">Want To Be a<span class="contact-title-highlight"> South Sider?</span> Join the Movement! </h2> 
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
@@ -561,9 +592,9 @@
             <!-- Authenticity Area Start Here  -->
             <section class="ms-banner-area  ms-authenticity-area p-relative pt-50">        
                 <div class="container-fluid ms-maw-1710">
-                        <div class="row align-items-end mb-25 bdFadeUp d-flex justify-content-center pb-80">
+                        <div class="row align-items-end mb-25 d-flex justify-content-center pb-80">
                             <div class="col-lg-12 d-flex justify-content-center">
-                                <div class="section__title-wrapper mb-40 bd-title-anim">
+                                <div class="section__title-wrapper mb-40">
                                     <div id="msg-title">
                                         <h2 class="section__title"><span class="authenticity-title-highlight">Authenticity</span> is Our <span class="authenticity-title-highlight">DNA</span></h2>
                                     </div>
@@ -628,7 +659,7 @@
             <!-- Life to Words. Area End Here  -->
             
             <!-- Qoutes Area start Here  -->
-            <section class="ms-authenticity-qoute-area pb-100 pt-30">
+            <!-- <section class="ms-authenticity-qoute-area pb-100 pt-30">
                 <div class="container authenticity">
                     <div class="row">
                         <div class="col-xl-6">
@@ -656,7 +687,40 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
+            <section class="ms-authenticity-qoute-area pb-100 pt-30">
+        <div class="container authenticity">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="ms-blockquote quote-1">
+                        <div class="highlight-line"></div>
+                        <div class="vinyl-bg vinyl-1"></div>
+                        <blockquote>
+                            <div class="qoute-body">
+                                <h4>I say what I want to say and do what I want to do.
+                                    There's no in-between. People will either love you for being 
+                                    real or hate you for being real.</h4>
+                            </div>
+                            <span>- EMINEM</span>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="ms-blockquote quote-2">
+                        <div class="highlight-line"></div>
+                        <div class="vinyl-bg vinyl-2"></div>
+                        <blockquote>
+                            <div class="qoute-body">
+                                <h4>I ain't no joke, I used to let the mic smoke, Now I slam it when I'm 
+                                    done and make sure it's broke.</h4>
+                            </div>
+                            <span>- RAKIM</span>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
             <!-- Qoutes Area End Here  -->
 
             <section class="text__scroll-area include__bg text-scroll-box p-relative fix">
@@ -826,9 +890,9 @@
             <section id="bd_has_accordion" class="ms-faq-area pt-100 pb-110 fix">
                         <div class="bd-accordion-fix">
                             <div class="container">
-                                <div class="row align-items-center mb-15 bdFadeUp">
+                                <div class="row align-items-center mb-15">
                                     <div class="col-xl-7 col-lg-10">
-                                        <div class="section__title-wrapper mb-40 bd-title-anim">
+                                        <div class="section__title-wrapper mb-40">
                                         <div id="msg-title">
                                             <h2 class="section__title"><span class="animated-underline active">What We Do</h2>
                                         </div>
@@ -1305,5 +1369,7 @@
     <!-- <script src="assets/app/js/settings.js"></script> -->
     <script src="assets/app/js/main.js"></script>
     <script src="assets/app/js/scrollreveal.js"></script>
+    <script src="assets/app/js/gsap-animations.js"></script>
+
   </body>
 </html>

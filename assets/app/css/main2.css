@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 
+body{
+  overflow-x: hidden;
+}
+
 #preloader > img {
   width: 300px;
 }

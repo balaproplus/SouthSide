@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
-
+body{
+  overflow-x: hidden;
+}
 .cursor-outer {
     border: 1px solid #fbc21e;;
 }
@@ -27,6 +29,20 @@
 /*================================ */
 /* Header */
 /* =============================== */
+.header__logo {
+  position: relative; /* make parent a reference */
+  display: inline-block; /* optional, ensures width fits logo */
+}
+
+.header__logo::before {
+  content: '';
+  position: absolute; /* required for bottom bar */
+  bottom: 10px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #FBC21E;
+}
 .offcanvas__info .ms-offcanvas-widget .offcanvas-links li{
   list-style: none;
   margin-bottom: 10px;
@@ -225,6 +241,12 @@
 .welcome-home-section .banner-media{
   padding-top: 30px;
 }
+@media only screen and (max-width: 575px) {
+  .data-text{
+    height: 22%;
+  }
+}
+
 @media only screen and (max-width: 1680px) {
   .data-text {
     top: -35%;
@@ -477,6 +499,12 @@
   color: #ffffff;
 
 }
+@media screen and (max-width:997px) {
+    .header__area .header__main .header__logo h3{
+  font-size: 20px;
+
+}
+}
 .header__area .header__main .header__logo h3 span{
   color: #FBC21E;
 
@@ -553,10 +581,27 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
   text-shadow: 3px 3px 50px rgb(0, 0, 0);
   padding:10px 0 ;
 }
+@media only screen and (max-width: 767px) {
+  .ms-banner__title-1 {
+    text-wrap: wrap;
+    margin-bottom:10px;
+
+  }
+  .ms-authenticity-area .ms-banner__main-wrapper-2 .ms-banner__content h3{
+    padding: 0 0;
+  }
+}
 .ms-authenticity-area .ms-banner__main-wrapper-2 .ms-banner__content h3 span{
   color: #FBC21E;
   text-shadow: 3px 3px 15px rgb(0, 0, 0);
 }
+
+@media only screen and (max-width: 1200px) {
+  .ms-banner__title-1 {
+    text-wrap: wrap;    
+  }
+}
+
 .ms-banner-area .text-scroll-box {
     padding: 180px 0 60px 0;
 }
@@ -566,7 +611,7 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
 .authenticity-highlight-1, .authenticity-highlight-2, .authenticity-highlight-3{
   padding: 70px 0px 70px 15px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: 700;
   color: #000;
   background-color: #FBC21E;
@@ -576,11 +621,23 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
   /* text-wrap: nowrap; */
   text-align: center;
 }
+@media only screen and (max-width: 767px) {
+.authenticity-highlight-1, .authenticity-highlight-2, .authenticity-highlight-3{
+  font-size: 60px;
+  line-height: 55px;
+}
+}
 
+@media only screen and (max-width: 1200px) {
+  .authenticity-highlight-1, .authenticity-highlight-2, .authenticity-highlight-3{
+    font-size: 64px;
+    line-height: 75px;
+  }
+}
 .authenticity .ms-blockquote .qoute-body{
   display: flex;
-  height: 180px;
 }
+
 .ms-blockquote blockquote {
     padding: 1.25rem 2rem 1.25rem 1.75rem;
     font-size: 1.375rem;
@@ -596,6 +653,16 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
     background: transparent;
     border:1px solid #FBC21E;
     border-radius: 0 !important;
+}
+@media only screen and (max-width: 767px) {
+.ms-blockquote {
+  margin-bottom: 20px;
+}
+}
+@media only screen and (max-width: 767px) {
+  .ms-foundation-content .ms-tm-slick-item p {
+    font-size: 24px !important;
+  }
 }
 .ms-blockquote blockquote h4 {
     line-height: 1.5;
@@ -628,6 +695,7 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
 }
  .ms-life-to-words-content{
   padding-top: 30px;
+  overflow-x: hidden;
  }
 .ms-life-to-words-title h1{
   font-size: 90px !important;
@@ -641,11 +709,22 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
   font-size: 34px !important;
   font-weight: 600;
   color: #fff;
-  /* font-family: "Caveat", cursive;
-  font-optical-sizing: auto; */
   font-family: "Grape Nuts", cursive;
   line-height: 30px;
   margin-bottom: 32px;
+}
+.ms-authenticity-qoute-area{
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 997px) {
+  .ms-life-to-words-title h1, .ms-life-to-words-content p{
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .ms-life-to-words-content p{
+    text-align: center !important;
+  }
 }
 .ms-about-area .foundation-heading .ms-title2{
   font-size: 72px !important;

@@ -557,6 +557,13 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
   color: #FBC21E;
   text-shadow: 3px 3px 15px rgb(0, 0, 0);
 }
+
+@media only screen and (max-width: 1200px) {
+  .ms-banner__title-1 {
+    text-wrap: wrap;    
+  }
+}
+
 .ms-banner-area .text-scroll-box {
     padding: 180px 0 60px 0;
 }
@@ -577,6 +584,12 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
   text-align: center;
 }
 
+@media only screen and (max-width: 1200px) {
+  .authenticity-highlight-1, .authenticity-highlight-2, .authenticity-highlight-3{
+    font-size: 64px;
+    line-height: 75px;
+  }
+}
 .authenticity .ms-blockquote .qoute-body{
   display: flex;
   height: 180px;
@@ -641,11 +654,19 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
   font-size: 34px !important;
   font-weight: 600;
   color: #fff;
-  /* font-family: "Caveat", cursive;
-  font-optical-sizing: auto; */
   font-family: "Grape Nuts", cursive;
   line-height: 30px;
   margin-bottom: 32px;
+}
+@media only screen and (max-width: 997px) {
+  .ms-life-to-words-title h1, .ms-life-to-words-content p{
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .ms-life-to-words-content p{
+    text-align: center !important;
+  }
 }
 .ms-about-area .foundation-heading .ms-title2{
   font-size: 72px !important;

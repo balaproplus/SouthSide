@@ -27,6 +27,20 @@
 /*================================ */
 /* Header */
 /* =============================== */
+.header__logo {
+  position: relative; /* make parent a reference */
+  display: inline-block; /* optional, ensures width fits logo */
+}
+
+.header__logo::before {
+  content: '';
+  position: absolute; /* required for bottom bar */
+  bottom: 10px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #FBC21E;
+}
 .offcanvas__info .ms-offcanvas-widget .offcanvas-links li{
   list-style: none;
   margin-bottom: 10px;
@@ -553,6 +567,16 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
   text-shadow: 3px 3px 50px rgb(0, 0, 0);
   padding:10px 0 ;
 }
+@media only screen and (max-width: 767px) {
+  .ms-banner__title-1 {
+    text-wrap: wrap;
+    margin-bottom:10px;
+
+  }
+  .ms-authenticity-area .ms-banner__main-wrapper-2 .ms-banner__content h3{
+    padding: 0 0;
+  }
+}
 .ms-authenticity-area .ms-banner__main-wrapper-2 .ms-banner__content h3 span{
   color: #FBC21E;
   text-shadow: 3px 3px 15px rgb(0, 0, 0);
@@ -576,7 +600,13 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
   /* text-wrap: nowrap; */
   text-align: center;
 }
+@media only screen and (max-width: 767px) {
+.authenticity-highlight-1, .authenticity-highlight-2, .authenticity-highlight-3{
+  font-size: 60px;
+  line-height: 55px;
+}
 
+}
 .authenticity .ms-blockquote .qoute-body{
   display: flex;
   height: 180px;
@@ -596,6 +626,16 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
     background: transparent;
     border:1px solid #FBC21E;
     border-radius: 0 !important;
+}
+@media only screen and (max-width: 767px) {
+.ms-blockquote {
+  margin-bottom: 20px;
+}
+}
+@media only screen and (max-width: 767px) {
+  .ms-foundation-content .ms-tm-slick-item p {
+    font-size: 24px !important;
+  }
 }
 .ms-blockquote blockquote h4 {
     line-height: 1.5;

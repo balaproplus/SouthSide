@@ -148,139 +148,139 @@ gsap.from(".ms-life-to-words-content p", {
 
 //
   // Animate first quote - slide from left with rotation
-        gsap.from('.quote-1', {
-            scrollTrigger: {
-                trigger: '.quote-1',
-                start: 'top 80%',
-                end: 'top 30%',
-                toggleActions: 'play none none none'
-            },
-            x: -200,
-            opacity: 0,
-            rotation: -10,
-            duration: 1.2,
-            ease: 'power3.out'
-        });
+gsap.from('.quote-1', {
+    scrollTrigger: {
+        trigger: '.quote-1',
+        start: 'top 80%',
+        end: 'top 30%',
+        toggleActions: 'play none none none'
+    },
+    x: -200,
+    opacity: 0,
+    rotation: -10,
+    duration: 1.2,
+    ease: 'power3.out'
+});
 
-        // Animate second quote - slide from right with rotation
-        gsap.from('.quote-2', {
-            scrollTrigger: {
-                trigger: '.quote-2',
-                start: 'top 80%',
-                end: 'top 30%',
-                toggleActions: 'play none none none'
-            },
-            x: 200,
-            opacity: 0,
-            rotation: 10,
-            duration: 1.2,
-            ease: 'power3.out'
-        });
+// Animate second quote - slide from right with rotation
+gsap.from('.quote-2', {
+    scrollTrigger: {
+        trigger: '.quote-2',
+        start: 'top 80%',
+        end: 'top 30%',
+        toggleActions: 'play none none none'
+    },
+    x: 200,
+    opacity: 0,
+    rotation: 10,
+    duration: 1.2,
+    ease: 'power3.out'
+});
 
-        // Animate quote text within first block
-        gsap.from('.quote-1 .qoute-body h4', {
-            scrollTrigger: {
-                trigger: '.quote-1',
-                start: 'top 70%'
-            },
-            opacity: 0,
-            y: 30,
-            duration: 1,
-            delay: 0.4,
-            ease: 'power2.out'
-        });
+// Animate quote text within first block
+gsap.from('.quote-1 .qoute-body h4', {
+    scrollTrigger: {
+        trigger: '.quote-1',
+        start: 'top 70%'
+    },
+    opacity: 0,
+    y: 30,
+    duration: 1,
+    delay: 0.4,
+    ease: 'power2.out'
+});
 
-        gsap.from('.quote-1 span', {
-            scrollTrigger: {
-                trigger: '.quote-1',
-                start: 'top 70%'
-            },
-            opacity: 0,
-            x: 50,
-            duration: 0.8,
-            delay: 0.8,
-            ease: 'back.out(1.7)'
-        });
+gsap.from('.quote-1 span', {
+    scrollTrigger: {
+        trigger: '.quote-1',
+        start: 'top 70%'
+    },
+    opacity: 0,
+    x: 50,
+    duration: 0.8,
+    delay: 0.8,
+    ease: 'back.out(1.7)'
+});
 
-        // Animate quote text within second block
-        gsap.from('.quote-2 .qoute-body h4', {
-            scrollTrigger: {
-                trigger: '.quote-2',
-                start: 'top 70%'
-            },
-            opacity: 0,
-            y: 30,
-            duration: 1,
-            delay: 0.4,
-            ease: 'power2.out'
-        });
+// Animate quote text within second block
+gsap.from('.quote-2 .qoute-body h4', {
+    scrollTrigger: {
+        trigger: '.quote-2',
+        start: 'top 70%'
+    },
+    opacity: 0,
+    y: 30,
+    duration: 1,
+    delay: 0.4,
+    ease: 'power2.out'
+});
 
-        gsap.from('.quote-2 span', {
-            scrollTrigger: {
-                trigger: '.quote-2',
-                start: 'top 70%'
-            },
-            opacity: 0,
-            x: -50,
-            duration: 0.8,
-            delay: 0.8,
-            ease: 'back.out(1.7)'
-        });
+gsap.from('.quote-2 span', {
+    scrollTrigger: {
+        trigger: '.quote-2',
+        start: 'top 70%'
+    },
+    opacity: 0,
+    x: -50,
+    duration: 0.8,
+    delay: 0.8,
+    ease: 'back.out(1.7)'
+});
 
-        // Vinyl record rotation animation
-        gsap.to('.vinyl-1', {
-            scrollTrigger: {
-                trigger: '.quote-1',
-                start: 'top 80%',
-                end: 'bottom 20%',
-                scrub: 1
-            },
-            rotation: 360,
-            ease: 'none'
-        });
+// Vinyl record rotation animation
+gsap.to('.vinyl-1', {
+    scrollTrigger: {
+        trigger: '.quote-1',
+        start: 'top 80%',
+        end: 'bottom 20%',
+        scrub: 1
+    },
+    rotation: 360,
+    ease: 'none'
+});
 
-        gsap.to('.vinyl-2', {
-            scrollTrigger: {
-                trigger: '.quote-2',
-                start: 'top 80%',
-                end: 'bottom 20%',
-                scrub: 1
-            },
-            rotation: -360,
-            ease: 'none'
-        });
+gsap.to('.vinyl-2', {
+    scrollTrigger: {
+        trigger: '.quote-2',
+        start: 'top 80%',
+        end: 'bottom 20%',
+        scrub: 1
+    },
+    rotation: -360,
+    ease: 'none'
+});
 
-        // Highlight line sweep animation
+// Highlight line sweep animation
+gsap.to('.quote-1 .highlight-line', {
+    scrollTrigger: {
+        trigger: '.quote-1',
+        start: 'top 70%'
+    },
+    opacity: 1,
+    duration: 0.6,
+    delay: 0.2,
+    onComplete: function() {
         gsap.to('.quote-1 .highlight-line', {
-            scrollTrigger: {
-                trigger: '.quote-1',
-                start: 'top 70%'
-            },
-            opacity: 1,
+            opacity: 0,
             duration: 0.6,
-            delay: 0.2,
-            onComplete: function() {
-                gsap.to('.quote-1 .highlight-line', {
-                    opacity: 0,
-                    duration: 0.6,
-                    delay: 0.2
-                });
-            }
+            delay: 0.2
         });
+    }
+});
 
+gsap.to('.quote-2 .highlight-line', {
+    scrollTrigger: {
+        trigger: '.quote-2',
+        start: 'top 70%'
+    },
+    opacity: 1,
+    duration: 0.6,
+    delay: 0.2,
+    onComplete: function() {
         gsap.to('.quote-2 .highlight-line', {
-            scrollTrigger: {
-                trigger: '.quote-2',
-                start: 'top 70%'
-            },
-            opacity: 1,
+            opacity: 0,
             duration: 0.6,
-            delay: 0.2,
-            onComplete: function() {
-                gsap.to('.quote-2 .highlight-line', {
-                    opacity: 0,
-                    duration: 0.6,
-                    delay: 0.2
-                });
-            }
+            delay: 0.2
         });
+    }
+});

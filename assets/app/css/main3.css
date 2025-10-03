@@ -241,6 +241,12 @@ body{
 .welcome-home-section .banner-media{
   padding-top: 30px;
 }
+@media only screen and (max-width: 575px) {
+  .data-text{
+    height: 22%;
+  }
+}
+
 @media only screen and (max-width: 1680px) {
   .data-text {
     top: -35%;
@@ -495,7 +501,7 @@ body{
 }
 @media screen and (max-width:997px) {
     .header__area .header__main .header__logo h3{
-  font-size: 10px;
+  font-size: 20px;
 
 }
 }
@@ -605,7 +611,7 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
 .authenticity-highlight-1, .authenticity-highlight-2, .authenticity-highlight-3{
   padding: 70px 0px 70px 15px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: 700;
   color: #000;
   background-color: #FBC21E;
@@ -630,8 +636,8 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
 }
 .authenticity .ms-blockquote .qoute-body{
   display: flex;
-  height: 180px;
 }
+
 .ms-blockquote blockquote {
     padding: 1.25rem 2rem 1.25rem 1.75rem;
     font-size: 1.375rem;
@@ -689,6 +695,7 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
 }
  .ms-life-to-words-content{
   padding-top: 30px;
+  overflow-x: hidden;
  }
 .ms-life-to-words-title h1{
   font-size: 90px !important;
@@ -705,6 +712,9 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
   font-family: "Grape Nuts", cursive;
   line-height: 30px;
   margin-bottom: 32px;
+}
+.ms-authenticity-qoute-area{
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 997px) {
   .ms-life-to-words-title h1, .ms-life-to-words-content p{

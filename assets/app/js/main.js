@@ -69,7 +69,7 @@
 	/*======================================
 	Sidebar Toggle
 	========================================*/
-	$(".offcanvas__close,.offcanvas__overlay").on("click", function () {
+	$("#offcanvas__close,.offcanvas__overlay").on("click", function () {
 		$(".offcanvas__info").removeClass("info-open");
 		$(".offcanvas__overlay").removeClass("overlay-open");
 	});
@@ -854,3 +854,13 @@
 
 
 
+// Video Query
+
+const video = document.querySelector('video');
+video.muted = true;
+video.playsInline = true;
+video.loop = true;
+
+video.play().catch(error => {
+  console.log("Autoplay blocked, user interaction needed.", error);
+});

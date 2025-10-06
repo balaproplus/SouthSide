@@ -204,7 +204,7 @@ body{
     color: #ffffff;
 }
 .contact-box:hover .contact-icon {
-    background-color: #fbc21e;
+    background-color: #ffd701;
 }
 /* ========================================= */
 .ms-contact-iframe {
@@ -224,11 +224,11 @@ body{
 /* ----------------------- */
 
 .footer-logo {
-  color: #7e7e7e;
+  color: #ffd701;
   font-size: 54px;
   font-weight: bold;
   letter-spacing: 1px;
-  opacity: 0.75;
+  opacity: 0.95;
 }
 .footer-tagline {
   margin-top: 5px;
@@ -272,14 +272,14 @@ body{
 }
 
 .footer-address {
-  font-size: 13px;
+  font-size: 16px;
   color: #bbb;
   line-height: 1.6;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .footer-links li a {
-  font-size: 11px;
+  font-size: 16px;
 }
 /* .ms-footer-social {
     justify-content: center;

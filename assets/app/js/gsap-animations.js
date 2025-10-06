@@ -300,3 +300,34 @@ gsap.from(".ms-contact-wrap", {
     toggleActions: "play none none none",
   }
 });
+
+
+//authenticity div slide
+const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".authenticity-highlight-content",
+      start: "top 70%",   // when section enters viewport
+      end: "bottom 60%",
+      once: true,
+      toggleActions: "play none none reverse"
+    }
+  });
+
+  tl.from(".authenticity-highlight-1", {
+    x: -200,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+  })
+  .from(".authenticity-highlight-2", {
+    x: 200,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+  }, "-=0.5")
+  .from(".authenticity-highlight-3", {
+    x: -200,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out"
+  }, "-=0.5");

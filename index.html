@@ -40,11 +40,6 @@
 </head>
 
   <body>
-    <style>
-        body{
-            overflow-x: hidden;
-        }
-    </style>
     <div class="mouseCursor cursor-outer"></div>
     <div class="mouseCursor cursor-inner"><span>Drag</span></div>
 
@@ -62,11 +57,12 @@
                 <div class="offcanvas__content">
                     <div class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
                         <div class="offcanvas__logo">
-                            <a href="index.html">
-                                <img src="assets/img/SouthSide-Hiphop-logo.gif" alt="logo">
+                            <a href="#home-top">
+                                <h2 class="offcanvas-logo">South Side Hip hop Records</h2>
+                                <!-- <img src="assets/img/SouthSide-Hiphop-logo.gif" alt="logo"> -->
                             </a>
                         </div>
-                        <div class="offcanvas__close">
+                        <div class="offcanvas__close" id="offcanvas__close">
                             <button>
                                 <i class="fal fa-times"></i>
                             </button>
@@ -81,17 +77,16 @@
                     <div class="container quick-sidebar-links">
                         <div class="section-heading-link">
                             <ul>
-                                <li><a href="#home-top">Home</a></li>
-                                <li><a href="#our-movement">Our Movement</a></li>
-                                <li><a href="#contact-box">Contact Us</a></li>
-                                <li><a href="#authenticity-box">Authenticity is Our DNA</a></li>
-                                <li><a href="#life-to-words">Life To Words</a></li>
-                                <li><a href="#ms-about-area">Foundation</a></li>
-                                <li><a href="#bd_has_accordion">What We Do</a></li>
+                                <li><a href="#home-top" id="offcanvas__close">Home</a></li>
+                                <li><a href="#our-movement" id="offcanvas__close">Our Movement</a></li>
+                                <li><a href="#contact-box" id="offcanvas__close">Join our community</a></li>
+                                <li><a href="#authenticity-box" id="offcanvas__close">Our Story</a></li>
+                                <li><a href="#ms-about-area" id="offcanvas__close">Foundation</a></li>
+                                <li><a href="#bd_has_accordion" id="offcanvas__close">What We Do</a></li>
                             </ul>
                         </div>
-                        <div class="ms-offcanvas-widget mb-20">
-                            <h2 class="offcanvas-logo">South Side</h2>
+                        <!-- <div class="ms-offcanvas-widget mb-20">
+                            <h2 class="offcanvas-logo">South Side Hip hop Records</h2>
                             
                                 <address class="offcanvas-address">
                                     Olympia Cyber Space<br />
@@ -107,15 +102,15 @@
                                 </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                   </div>                         
-                    <div class="offcanvas__social">
+                    <!-- <div class="offcanvas__social">
                         <div class="ms-footer-social mb-0">
                             <a href="https://www.linkedin.com/" title="Instagram" target="_blank">IN</a>
                             <a href="https://twitter.com/" title="Twitter" target="_blank">TW</a>
                             <a href="https://www.facebook.com/" title="Facebook" target="_blank">FB</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -288,16 +283,19 @@
         </div>
     </header>
     <!-- Header area end -->
-    <div class="ms-all-content ms-content-mobile-space pt-130" id="home-top">
+    <div class="ms-all-content ms-content-mobile-space pt-60" id="home-top">
         <main>
+            <video autoplay muted loop playsinline>
+                <source src="assets/video/landing-logo.mp4" type="video/mp4">
+            </video>
 
             <!-- Banner Area Start Here  -->
             <section class="ms-banner-area p-relative" id="home">
-                <div class="container-fluid ms-maw-1710">
+                <div class="container-fluid ms-maw-1710 site-head">
                     <div class="ms-br-30 mx-auto include__bg z-index-1 ms-overlay-1 p-relative">
                         <div class="container">
                             <div class="banner-img Landing-section-logo">
-                                <img src="assets/img/logo/Landing-section-logo.gif" alt="">
+                                <!-- <img src="assets/img/logo/Landing-section-logo.gif" alt=""> -->
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-xl-11">
@@ -305,20 +303,20 @@
                                         <div class="ms-banner__content text-center">
                                            
                                             <div class="content">
-                                                <h1 class="title site-title">South Side Hip Hop Records
-                                                    <div class="aurora">
+                                                <h1 class="title site-title">South Side Hip Hop Records India
+                                                    <!-- <div class="aurora">
                                                     <div class="aurora__item"></div>
                                                     <div class="aurora__item"></div>
                                                     <div class="aurora__item"></div>
                                                     <div class="aurora__item"></div>
-                                                    </div>
+                                                    </div> -->
                                                 </h1>
                                             </div>
 
                                             <!-- <h1 class="ms-banner__bg-title">
                                                 South Side Hip Hop Records
                                             </h1> -->
-                                            <h2 class="ms-banner__title msg_title site-title-1 bd-title-anim">India</h2>
+                                            <!-- <h2 class="ms-banner__title msg_title site-title-1 bd-title-anim">India</h2> -->
                                             <h3 class="ms-banner__sub-title msg_title bd-title-anim pb-120 pt-60">Where Authentic Hip-Hop comes to life.
                                             </h3>
                                             
@@ -334,7 +332,7 @@
                                             </div> -->
                                             
                                             <p class="welcome-para">From the streets of Tamil Nadu to the heart of India from every artist’s own mind and efficiency, South Side Hip Hop Records is the home for raw, 
-                                                independent rap talent that refuses to be silenced.Welcome to South Side Hip Hop Records India Born in the heart of Chennai, Tamil Nadu — South Side Hip Hop Records India is a home for hip-hop artists, 
+                                                independent rap talent that refuses to be silenced. Welcome to South Side Hip Hop Records India Born in the heart of Chennai, Tamil Nadu — South Side Hip Hop Records India is a home for hip-hop artists, 
                                                 rappers, and storytellers across India. It’s <span>The Foundation of Real Sound</span>, South Side Hip Hop Records India was born out of need, a need for a space where real artists can breathe, create, and be heard. 
                                                 No gimmicks. No mumble. No fake flex. Just <span>authentic music</span> that represents struggle, pride, roots, rebellion, and the fight to rise. Whether you’re a kid writing bars in your notebook, a survivor pouring your pain onto a beat, 
                                                 or an underground MC ready to take over stages , South Side Hip Hop Records India is<span> your home.</span>
@@ -366,22 +364,22 @@
             <!-- Banner Area End Here  -->
 
 
-            <div class="position-relative welcome-home-section pb-50">	
+            <div class="position-relative welcome-home-section">	
                 <div class="data-text">	
                     <svg class="animation-text">
                         <text x="50%" y="1em" text-anchor="middle" >Welcome Home</text>
                     </svg>
                 </div>
                 <div class="banner-media"> 
-                    <video id="video-background">
-                        <source src="assets/video/bg-video.mp4" type="video/mp4">
+                    <video>
                     </video>
                 </div>
             </div>
 
+
             <!-- Our Movement start -->
-            <section class="trending__area p-relative z-index-11 x-clip pt-100 pb-160" id="our-movement">
-                <div class="container pb-140">
+            <section class="trending__area p-relative z-index-11 x-clip" id="our-movement">
+                <div class="container movement-padding">
                     <div class="row align-items-center mb-15 d-flex justify-content-center">
                             <div class="col-xl-7 col-lg-10 d-flex justify-content-center">
                                 <div class="section__title-wrapper mb-40">
@@ -606,13 +604,13 @@
                             <div class="col-lg-12 d-flex justify-content-center">
                                 <div class="section__title-wrapper mb-40">
                                     <div id="msg-title">
-                                        <h2 class="section__title"><span class="authenticity-title-highlight">Authenticity</span> is Our <span class="authenticity-title-highlight">DNA</span></h2>
+                                        <h2 class="section__title"><span class="authenticity-title-highlight">Authenticity</span> is Our <span class="authenticity-title-highlight-1">DNA</span></h2>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     <div class="ms-br-30 mx-auto include__bg z-index-1 ms-overlay3 p-relative"
-                        data-background="assets/img/travel-journal-pen-placed-map_1265500-124789-1.jpg">
+                        data-background="assets/img/Authenticity-is-Our-DNA.jpg">
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-xl-12 ">
@@ -699,37 +697,37 @@
                 </div>
             </section> -->
             <section class="ms-authenticity-qoute-area pb-100 pt-30">
-        <div class="container authenticity">
-            <div class="row">
-                <div class="col-xl-6">
-                    <div class="ms-blockquote quote-1">
-                        <div class="highlight-line"></div>
-                        <div class="vinyl-bg vinyl-1"></div>
-                        <blockquote>
-                            <div class="qoute-body">
-                                <h4>I say what I want to say and do what I want to do.
-                                    There's no in-between. People will either love you for being 
-                                    real or hate you for being real.</h4>
+                <div class="container authenticity">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="ms-blockquote quote-1">
+                                <div class="highlight-line"></div>
+                                <div class="vinyl-bg vinyl-1"></div>
+                                <blockquote>
+                                    <div class="qoute-body">
+                                        <h4>I say what I want to say and do what I want to do.
+                                            There's no in-between. People will either love you for being 
+                                            real or hate you for being real.</h4>
+                                    </div>
+                                    <span>- EMINEM</span>
+                                </blockquote>
                             </div>
-                            <span>- EMINEM</span>
-                        </blockquote>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="ms-blockquote quote-2">
+                                <div class="highlight-line"></div>
+                                <div class="vinyl-bg vinyl-2"></div>
+                                <blockquote>
+                                    <div class="qoute-body" style="height:185px">
+                                        <h4>I ain't no joke, I used to let the mic smoke, Now I slam it when I'm 
+                                            done and make sure it's broke.</h4>
+                                    </div>
+                                    <span>- RAKIM</span>
+                                </blockquote>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-6">
-                    <div class="ms-blockquote quote-2">
-                        <div class="highlight-line"></div>
-                        <div class="vinyl-bg vinyl-2"></div>
-                        <blockquote>
-                            <div class="qoute-body" style="height:185px">
-                                <h4>I ain't no joke, I used to let the mic smoke, Now I slam it when I'm 
-                                    done and make sure it's broke.</h4>
-                            </div>
-                            <span>- RAKIM</span>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </div>
             </section>
             <!-- Qoutes Area End Here  -->
 
@@ -1340,8 +1338,126 @@
     <!-- What to do area end -->
         </main>
      </div>
+     <!-- Footer Area Start Here  -->
+      <footer>
+        <div class="ms-footer-bg zindex-1 include__bg pt-130"
+          >
+          <div class="ms-footer-top pt-0">
+            <div class="container">
+              <div class="ms-footer-border pb-50">
+                <div class="row">
+                  <!-- <div class="col-xxl-2 col-lg-2 col-md-6 footer-column-1">
+                    <div class="ms-footer-widget mb-50">
+                      <h3 class="ms-footer-title">Explore</h3>
+                      <ul>
+                        <li><a href="./index.php">Home</a></li>
+                        <li><a href="./about.php">About</a></li>
+                        <li><a href="./contact.php">Contact</a></li>
+                        <li><a href="./foundation.php">Foundation</a></li>
+                        <li><a href="./event.php">Events</a></li>
+                        <li><a href="./gallery.php">Gallery</a></li>
+                      </ul>
+                    </div>
+                  </div> -->
+                  <div class="col-xxl-7 col-lg-7 col-md-6 text-center">
+                    <div class="ms-footer-widget mb-50">
+                      <h2 class="footer-logo">South Side Hiphop Records</h2>
+                      <p class="footer-tagline">
+                        Raw. Independent. Unapologetically Real.
+                      </p>
+                      <p class="footer-mission">
+                        We’re building a movement — not just music. A space for
+                        real voices in Indian hip-hop.
+                      </p>
+                      <a href="foundation.php" class="footer-cta"
+                        >Explore Our Foundation →</a
+                      >
+                      <p class="footer-quote mt-3">“Bars Before Fame.”</p>
+                    </div>
+                  </div>                  
+                  <div class="col-xxl-5 col-lg-5 col-md-6 footer-column-3">
+                    <div class="ms-footer-widget mb-20 ">
+                      <h3 class="ms-footer-title footer-title-3">Connect</h3>
+                      <address class="footer-address">
+                        Olympia Cyber Space<br />
+                        No. 21/22, Alandur Road,<br />
+                        Arulayaimanpet 2nd Street,<br />
+                        Guindy, Chennai – 600032, Tamil Nadu, India
+                      </address>
+                      <ul class="footer-links">
+                        <li>
+                          <a href="mailto:southsidehiphoprecords@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                            southsidehiphoprecords@gmail.com
+                          </a>
+                        </li>
+                        <li>
+                          <a href="tel:+918807107374">
+                            <i class="fas fa-phone"></i> +91 88071 07374
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="ms-footer-social">
+                      <a
+                        href="https://www.linkedin.com/"
+                        title="LinkedIn"
+                        target="_blank"
+                        >IN</a
+                      >
+                      <a
+                        href="https://twitter.com/"
+                        title="Twitter"
+                        target="_blank"
+                        >TW</a
+                      >
+                      <a
+                        href="https://www.facebook.com/"
+                        title="Facebook"
+                        target="_blank"
+                        >FB</a
+                      >
+                    </div>
+                  </div>
+                  <!-- <div class="col-xxl-3 col-lg-3 col-md-6">
+                    <div class="ms-footer-widget mb-50">
+                      <h3 class="ms-footer-title">Stay in the Loop</h3>
+                      <div class="ms-subscribe-form mb-20 pt-5">
+                        <i class="flaticon-mail"></i>
+                        <input type="text" placeholder="Enter your mail" />
+                        <button type="submit" class="ms-subscribe-btn">
+                          <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        </button>
+                      </div>
+                      <div class="ms-footer-warning mb-25">
+                        <p>We drop bars, not spam.</p>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ms-footer-bottom">
+            <div class="container">
+              <div
+                class="ms-footer-bottom-wrap align-items-center d-flex flex-wrap justify-content-center pt-35 pb-20"
+              >
+                <!-- <div class="ms-footer-logo mb-15">
+                  <a href="index.php"
+                    ><img src="assets/img/logo/footer-logo.png" alt="logo"
+                  /></a>
+                </div> -->
+                <div class="ms-footer-copy">
+                  <p>© South Side Hip hop 2025, All Rights Reserved</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer Area End Here  -->
 
-</style>
 
 
 

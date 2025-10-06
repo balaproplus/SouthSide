@@ -75,9 +75,9 @@
   --clr-common-heading: #333333;
   --clr-common-body-text: #858585;
   --clr-common-body: #000000;
-  --clr-theme-1: #FBC21E;
+  --clr-theme-1: #ffd701;
   --clr-theme-2: #69E7CB;
-  --clr-theme-3: #FBC21E;
+  --clr-theme-3: #ffd701;
   --clr-text-primary: #ffffff;
   --clr-text-secondary: #111111;
   --clr-text-1: #414141;
@@ -90,7 +90,7 @@
   --clr-text-8: #e1e1e1;
   --clr-text-9: #F7F7F7;
   --clr-text-10: #6C00A8;
-  --clr-text-11: #FBC21E;
+  --clr-text-11: #ffd701;
   --clr-bg-1: #5EE4C6;
   --clr-bg-2: #181818;
   --clr-bg-3: #FFC107;
@@ -143,6 +143,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /*---------------------------------
@@ -872,7 +873,7 @@ a:visited.ui-button,
 }
 
 .ms-overlay5 {
-  background: rgba(13, 13, 13, 0.9);
+  background: rgba(13, 13, 13, 0.6);
 }
 
 .ms-overlay6 {
@@ -1654,7 +1655,7 @@ a:visited.ui-button,
   justify-content: center;
   color: var(--clr-common-white);
   font-size: 18px;
-  background-color: var(--clr-theme-1);
+  border:1px solid var(--clr-common-white);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -o-border-radius: 50%;
@@ -1663,12 +1664,19 @@ a:visited.ui-button,
   overflow: hidden;
   position: relative;
 }
+.offcanvas__close button:hover{
+  border:1px solid var(--clr-theme-1);
+
+}
 .offcanvas__close button i {
   color: var(--clr-common-white);
 }
+.offcanvas__close button:hover i {
+  color: var(--clr-theme-1);
+}
 .offcanvas__info {
   background: #191919 none repeat scroll 0 0;
-  border-left: 2px solid var(--clr-theme-1);
+  border-left: 2px solid #ffd901be;
   position: fixed;
   right: 0;
   top: 0;
@@ -3596,13 +3604,13 @@ Animate Underline
   visibility: hidden;
 }
 .bd-theme-color-btn.bd-color-settings-btn[data-color="#FF589B"] {
-  background-color: #FBC21E;
+  background-color: #ffd701;
 
 }
 /* .bd-theme-color-btn.bd-color-settings-btn[data-color="#69E7CB"] {
   background-color: #69E7CB;
 }
-.bd-theme-color-btn.bd-color-settings-btn[data-color="#FBC21E"] {
+.bd-theme-color-btn.bd-color-settings-btn[data-color="#ffd701"] {
   background-color: #FF589B;
 
 }
@@ -4678,7 +4686,7 @@ Animate Underline
   transform: translateY(-50%);
 }
 .ms-header2-song .jp-play-bar {
-  background: #FBC21E;
+  background: #ffd701;
   height: 1px;
 }
 .ms-header2-song .jp-volume-bar {
@@ -4784,6 +4792,10 @@ Animate Underline
 .ms-banner__main-wrapper-4{
   padding-top: 0px;
   padding-bottom: 1200px;
+}
+.ms-banner__main-wrapper-5{
+  padding-top: 40px;
+  padding-bottom: 120px;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .ms-banner__main-wrapper {
@@ -5325,8 +5337,9 @@ Animate Underline
 }
 
 .ms-text-line-2 {
-  transform: translateY(-108px) rotate(-8.59deg);
+  transform: translateY(-108px) rotate(-10deg);
   background: var(--clr-theme-1);
+  margin-top: 30px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .ms-text-line-2 {
@@ -5337,7 +5350,7 @@ Animate Underline
 
 .ms-text-line-1 {
   background: var(--clr-theme-1);
-  transform: rotate(4.25deg);
+  transform: rotate(10deg);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .ms-text-line-1 {

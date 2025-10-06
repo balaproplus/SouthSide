@@ -31,31 +31,31 @@ ScrollReveal().reveal(".line1, .line2, .line3, .fa-play", {
   interval: 100,
 });
 
-ScrollReveal().reveal(".authenticity-highlight-1", {
-  duration:500,
-  delay: 400,
-  origin: "left",
-  easing: "ease-in-out",
-  distance: "900px",
-  interval: 300,
-});
-ScrollReveal().reveal(".authenticity-highlight-2", {
-  duration: 1000,
-  delay: 400,
-  origin: "right",
-  easing: "ease-in-out",
-  distance: "900px",
-  interval: 300,
-});
+// ScrollReveal().reveal(".authenticity-highlight-1", {
+//   duration:500,
+//   delay: 400,
+//   origin: "left",
+//   easing: "ease-in-out",
+//   distance: "900px",
+//   interval: 300,
+// });
+// ScrollReveal().reveal(".authenticity-highlight-2", {
+//   duration: 1000,
+//   delay: 400,
+//   origin: "right",
+//   easing: "ease-in-out",
+//   distance: "900px",
+//   interval: 300,
+// });
 
-ScrollReveal().reveal(".authenticity-highlight-3", {
-  duration:1000,
-  delay: 400,
-  origin: "left",
-  easing: "ease-in-out",
-  distance: "900px",
-  interval: 300,
-});
+// ScrollReveal().reveal(".authenticity-highlight-3", {
+//   duration:1000,
+//   delay: 400,
+//   origin: "left",
+//   easing: "ease-in-out",
+//   distance: "900px",
+//   interval: 300,
+// });
 
 
 

@@ -319,11 +319,11 @@ video {
 }
 .data-text{
   overflow: visible;
-  position: absolute;
+  /* position: absolute; */
   top: 0%;
   width: 100%;
   opacity: 0.8;
-  height: 100%;
+  height: 13em;
   z-index: 9999;
   background-color: #ffd701;
 }
@@ -331,6 +331,7 @@ video {
   padding-top: 30px;
   paddding-bottom:50px;
 }
+
 @media only screen and (max-width: 575px) {
   .data-text{
     height: 22%;
@@ -341,7 +342,7 @@ video {
     height: 45%;
   }
   .data-text .animation-text text {
-        font-size: 130px !important;
+        font-size: 120px !important;
     }
 }
 @media only screen and (max-width: 1680px) {
@@ -399,7 +400,7 @@ video {
 }
 @media only screen and (max-width: 1576px) {
   .data-text  .animation-text text {
-    font-size: 142px;
+    font-size: 160px;
   }
 }
 
@@ -408,15 +409,19 @@ video {
     font-size: 152px;
   }
 }
+
 @media only screen and (max-width: 1280px) {
   .data-text{
-    height: 85%;
+    height: 10em;
   }
   .data-text  .animation-text text {
-    font-size: 146px;
+    font-size: 124px;
   }
 }
 @media only screen and (max-width: 1024.50px) {
+  .data-text{
+    height: 9.7em;
+  }
   .data-text  .animation-text text {
     font-size: 120px;
   }
@@ -424,11 +429,11 @@ video {
 
 @media only screen and (max-width: 991px) {
   .data-text  .animation-text text {
-    font-size: 70px !important;
+    font-size: 100px !important;
     font-weight: 500;
   }
   .data-text{
-    height: 45%;
+    height: 8em;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -437,7 +442,7 @@ video {
     font-weight: 400;
   }
   .data-text{
-    height: 35%;
+    height: 5.3em;
   }
 }
 
@@ -446,7 +451,7 @@ video {
     font-size: 40px !important;
   }
   .data-text{
-    height: 22%;
+    height: 3.2em;
   }
 }
 
@@ -500,8 +505,6 @@ video {
     stroke-width: 0;
   }
 }
-
-
 
 /* =================================== */
 /* Authenticity Ends*/

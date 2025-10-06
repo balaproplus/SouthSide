@@ -4785,6 +4785,12 @@ Animate Underline
   padding-top: 120px;
   padding-bottom: 120px;
 }
+@media only screen and (max-width: 430px) {
+  .ms-banner__main-wrapper-2{
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+}
 .ms-banner__main-wrapper-3{
   padding-top: 120px;
   padding-bottom: 0px;
@@ -4799,7 +4805,7 @@ Animate Underline
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .ms-banner__main-wrapper {
-    padding-bottom: 80px;
+    padding-bottom: 50px;
   }
 }
 

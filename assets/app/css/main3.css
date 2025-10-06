@@ -224,6 +224,15 @@ video {
     color: #ffd701;
     font-family: "Cutive Mono", monospace;
 }
+@media only screen and (max-width: 430px) {
+  .ms-banner__content .welcome-quote blockquote cite {
+    text-align: center;
+    font-style: normal;
+    font-size: 18px !important;
+    padding-right: 0px;
+  }
+
+}
 .ms-banner__content .welcome-quote blockquote .quotes {
     position: absolute;
     right: 30px;
@@ -303,9 +312,13 @@ video {
   text-align: center;
 }
 .text-scroll-box{
-  padding: 180px 0;
+  padding: 180px 0 180px 0;
 }
-
+@media only screen and (max-width: 430px) {
+  .text-scroll-box{
+  padding: 40px 0 100px 0;
+}
+}
 /* ================================================== */
 
 .position-relative {
@@ -715,6 +728,11 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
 .ms-authenticity-area .section__title{
   font-size: 54px !important;
 }
+@media only screen and (max-width: 430px) {
+  .ms-authenticity-area .section__title{
+  font-size: 38px !important;
+}
+}
 .ms-authenticity-area .authenticity-title-highlight-1{
   background-color: #ffd701 !important;
   color: #000000 !important;
@@ -744,7 +762,7 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
 }
 @media only screen and (max-width: 767px) {
   .trending__area{
-  padding-top: 0px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
   .ms-banner__title-1 {
@@ -894,7 +912,11 @@ box-shadow: rgba(255, 190, 0, 0.61) 0px 50px 100px -90px, rgba(255, 191, 0, 0.79
 .ms-about-area .foundation-heading .ms-title2{
   font-size: 72px !important;
 }
-
+@media only screen and (max-width: 430px) {
+  .ms-about-area .foundation-heading .ms-title2{
+  font-size: 64px !important;
+}
+}
 .ms-foundation-content .foundation-text{
   font-size: 32px;
   line-height: 48px;
